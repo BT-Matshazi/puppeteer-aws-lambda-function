@@ -20,6 +20,10 @@ async function getPdf(url) {
       format: "A4",
       printBackground: true,
       scale: 0.9,
+      margin: {
+        top: "40px",
+        bottom: "40px",
+      },
     });
 
     await browser.close();
